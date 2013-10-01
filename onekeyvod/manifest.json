@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Onekey VOD",
+	"version": "0.2",
+
+	"description": "一键云播yyets,imax的电驴链接 by hillw4h",
+	"icons": {
+		"16": "play.png",
+		"48": "play.png",
+		"128": "play.png"
+		},
+    
+
+	"content_scripts": [
+	{
+	  "matches": ["http://www.yyets.com/resource/*",
+	              "http://imax.im/movies/*"],
+	  "js": ["jquery.js", "play.js"]
+	}]
+}
